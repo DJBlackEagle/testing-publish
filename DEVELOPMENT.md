@@ -207,3 +207,8 @@ or CI configurations are introduced.
 [REF_INTERN_URL_VULNERABILITY_NEW]: https://github.com/DJBlackEagle/code-style-nodejs/security/advisories/new
 [REF_INTERN_URL_WORKFLOW_CQAT]: https://github.com/DJBlackEagle/code-style-nodejs/actions/workflows/code-quality-and-tests.yml
 [REF_INTERN_URL_WORKFLOW_CODEQL]: https://github.com/DJBlackEagle/code-style-nodejs/actions/workflows/codeql.yml
+[REF_EXTERN_NODEJS]: https://nodejs.org
+[REF_EXTERN_NPM]: https://www.npmjs.com
+[REF_EXTERN_PNPM]: https://pnpm.io
+[REF_EXTERN_YARN]: https://yarnpkg.com
+[REF_EXTERN_PRETTIER]: https://prettier.io

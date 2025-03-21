@@ -48,7 +48,7 @@
     "format:file": "prettier --check --ignore-unknown",
     "format:fix": "prettier --write --ignore-unknown .",
     "format:fix:file": "prettier --write --ignore-unknown",
-    "validate": "pnpm run lint && pnpm run format && pnpm run test --config=jest.config.workflow-ci.mjs",
+    "validate": "pnpm run lint && pnpm run format && pnpm run test --onlyChanged --config=jest.config.workflow-ci.mjs",
     "prepare": "husky"
   },
   "dependencies": {
