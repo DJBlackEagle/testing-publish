@@ -15,6 +15,9 @@ standardized commit messages.
 
 - [Benefits](#benefits)
 - [Getting Started](#getting-started)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [Configuration](#configuration)
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [Security](#security)
@@ -41,6 +44,44 @@ Using `@djblackeagle/code-style-nodejs` offers several advantages for your proje
 
 This section will guide you through setting up and configuring `@djblackeagle/code-style-nodejs`
 in your project.
+
+### Requirements
+
+- [Node.js][REF_EXTERN_NODEJS] (>=18.0.0)
+- [npm][REF_EXTERN_NPM] or [pnpm][REF_EXTERN_PNPM] or [Yarn][REF_EXTERN_YARN]
+- [Prettier][REF_EXTERN_PRETTIER] (>=3.5.0)
+
+### Installation
+
+Install `@djblackeagle/code-style-nodejs` and its dependencies using your preferred
+package manager:
+
+```sh
+# npm
+npm install --save-dev @djblackeagle/code-style-nodejs prettier
+
+# pnpm
+pnpm add --save-dev @djblackeagle/code-style-nodejs prettier
+
+# Yarn
+yarn add --dev @djblackeagle/code-style-nodejs prettier
+```
+
+### Configuration
+
+#### Prettier <!-- omit in toc -->
+
+Create or modify your `prettier.config.mjs` file and add the following:
+
+```javascript
+import { codeStyleNodeJs } from '@djblackeagle/code-style-nodejs';
+
+const config = {
+  ...codeStyleNodeJs.prettier.configs.base(),
+};
+
+export default config;
+```
 
 ## Contributing
 
@@ -100,3 +141,8 @@ This project is licensed under the [MIT License][REF_INTERN_FILE_MD_LICENSE].
 [REF_INTERN_URL_VULNERABILITY_NEW]: https://github.com/DJBlackEagle/code-style-nodejs/security/advisories/new
 [REF_INTERN_URL_WORKFLOW_CQAT]: https://github.com/DJBlackEagle/code-style-nodejs/actions/workflows/code-quality-and-tests.yml
 [REF_INTERN_URL_WORKFLOW_CODEQL]: https://github.com/DJBlackEagle/code-style-nodejs/actions/workflows/codeql.yml
+[REF_EXTERN_NODEJS]: https://nodejs.org
+[REF_EXTERN_NPM]: https://www.npmjs.com
+[REF_EXTERN_PNPM]: https://pnpm.io
+[REF_EXTERN_YARN]: https://yarnpkg.com
+[REF_EXTERN_PRETTIER]: https://prettier.io
