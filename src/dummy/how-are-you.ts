@@ -1,6 +1,6 @@
 /**
  * Generates a greeting message.
- * 
+ *
  * @param {string} [who='world'] - The name of the person to greet.
  * @returns {string} The greeting message.
  */
