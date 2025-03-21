@@ -9,9 +9,11 @@ contributors who want to understand how the project works behind the scenes.
 - [Package.json Scripts](#packagejson-scripts)
   - [Cleaning Scripts](#cleaning-scripts)
   - [Build Script](#build-script)
+  - [Testing Scripts](#testing-scripts)
   - [Linting Scripts](#linting-scripts)
   - [Formatting Scripts](#formatting-scripts)
   - [Preparation Script](#preparation-script)
+  - [Validation Script](#validation-script)
 - [Workflow Configuration](#workflow-configuration)
   - [Automatic Dependency Updates](#automatic-dependency-updates)
   - [CodeQL Security Analysis](#codeql-security-analysis)
@@ -41,6 +43,17 @@ cleaning, building, testing, linting, formatting, and preparing the project.
   First, it cleans the build directory (using `clean:build`) and then compiles
   the project using the TypeScript compiler with the configuration specified in `tsconfig.build.json`.
 
+### Testing Scripts
+
+- **test**  
+  Executes the test suite using Jest.
+- **test:coverage**  
+  Runs Jest with a coverage flag to generate code coverage reports.
+- **test:watch**  
+  Runs Jest in watch mode, automatically re-running tests when files change.
+- **test:watch:onlychanged**  
+  Runs Jest in watch mode but only tests files that have been modified.
+
 ### Linting Scripts
 
 - **lint**  
@@ -69,6 +82,14 @@ cleaning, building, testing, linting, formatting, and preparing the project.
 - **prepare**  
   Sets up Husky by installing Git hooks. These hooks enforce code quality and
   commit message standards before commits are finalized.
+
+### Validation Script
+
+- **validate**  
+  A comprehensive script that performs a series of checks:
+  1. Runs the linting process.
+  2. Checks code formatting.
+  3. Executes tests using a specific Jest configuration (`jest.config.workflow-ci.mjs`).
 
 ## Workflow Configuration
 

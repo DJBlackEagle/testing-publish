@@ -36,10 +36,10 @@
     "clean:cache": "rm -rf ./.cache",
     "clean:node": "rm -rf ./node_modules",
     "build": "pnpm run clean:build && tsc -p ./tsconfig.build.json",
-    "test": "echo \"Not implemented yet (test).\" && exit 0",
-    "test:coverage": "echo \"Not implemented yet (test:coverage).\" && exit 0",
-    "test:watch": "echo \"Not implemented yet (test:watch).\" && exit 0",
-    "test:watch:onlychanged": "echo \"Not implemented yet (test:watch:onlychanged).\" && exit 0",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:watch:onlychanged": "jest --watch --onlyChanged",
     "lint": "eslint .",
     "lint:file": "eslint",
     "lint:fix": "eslint --fix .",
@@ -48,18 +48,8 @@
     "format:file": "prettier --check --ignore-unknown",
     "format:fix": "prettier --write --ignore-unknown .",
     "format:fix:file": "prettier --write --ignore-unknown",
-    "validate": "echo \"Not implemented yet (validate).\" && exit 0",
+    "validate": "pnpm run lint && pnpm run format && pnpm run test --config=jest.config.workflow-ci.mjs",
     "prepare": "husky"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^19.8.0",
-    "@commitlint/config-conventional": "^19.8.0",
-    "@types/node": "^22.13.11",
-    "eslint": "^9.22.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.5.0",
-    "prettier": "^3.5.3",
-    "typescript": "^5.8.2"
   },
   "dependencies": {
     "@eslint/compat": "^1.2.7",
@@ -72,5 +62,18 @@
     "eslint-plugin-prettier": "^5.2.3",
     "globals": "^16.0.0",
     "typescript-eslint": "^8.27.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.11",
+    "eslint": "^9.22.0",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.2.6",
+    "typescript": "^5.8.2"
   }
 }

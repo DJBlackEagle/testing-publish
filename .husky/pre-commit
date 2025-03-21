@@ -9,3 +9,4 @@ for file in $(git diff --cached --name-only --diff-filter=ACM | grep -E '\.sh$|^
 done
 
 pnpm exec lint-staged
+pnpm exec jest --onlyChanged --config=jest.config.workflow-ci.mjs
