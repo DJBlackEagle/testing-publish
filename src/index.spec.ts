@@ -1,7 +1,7 @@
 import { codeStyleNodeJs } from './index';
 
 describe('index', () => {
-  const expectedKeys = ['prettier'] as const;
+  const expectedKeys = ['commitlint', 'prettier'] as const;
 
   it(`should have exactly ${expectedKeys.length} keys`, () => {
     expect(Object.keys(codeStyleNodeJs).length).toBe(expectedKeys.length);
