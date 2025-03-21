@@ -49,6 +49,7 @@ in your project.
 
 - [Node.js][REF_EXTERN_NODEJS] (>=18.0.0)
 - [npm][REF_EXTERN_NPM] or [pnpm][REF_EXTERN_PNPM] or [Yarn][REF_EXTERN_YARN]
+- [commitlint][REF_EXTERN_COMMITLINT] (>=19.8.0)
 - [Prettier][REF_EXTERN_PRETTIER] (>=3.5.0)
 
 ### Installation
@@ -58,16 +59,30 @@ package manager:
 
 ```sh
 # npm
-npm install --save-dev @djblackeagle/code-style-nodejs prettier
+npm install --save-dev @djblackeagle/code-style-nodejs prettier @commitlint/cli @commitlint/config-conventional
 
 # pnpm
-pnpm add --save-dev @djblackeagle/code-style-nodejs prettier
+pnpm add --save-dev @djblackeagle/code-style-nodejs prettier @commitlint/cli @commitlint/config-conventional
 
 # Yarn
-yarn add --dev @djblackeagle/code-style-nodejs prettier
+yarn add --dev @djblackeagle/code-style-nodejs prettier @commitlint/cli @commitlint/config-conventional
 ```
 
 ### Configuration
+
+#### commitlint <!-- omit in toc -->
+
+Create or modify your `commitlint.config.mjs` file and add the following:
+
+```javascript
+import { codeStyleNodeJs } from '@djblackeagle/code-style-nodejs';
+
+const config = {
+  ...(await codeStyleNodeJs.commitlint.configs.base()),
+};
+
+export default config;
+```
 
 #### Prettier <!-- omit in toc -->
 
@@ -146,3 +161,4 @@ This project is licensed under the [MIT License][REF_INTERN_FILE_MD_LICENSE].
 [REF_EXTERN_PNPM]: https://pnpm.io
 [REF_EXTERN_YARN]: https://yarnpkg.com
 [REF_EXTERN_PRETTIER]: https://prettier.io
+[REF_EXTERN_COMMITLINT]: https://commitlint.js.org/
