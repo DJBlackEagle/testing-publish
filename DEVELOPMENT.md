@@ -10,6 +10,8 @@ contributors who want to understand how the project works behind the scenes.
   - [Cleaning Scripts](#cleaning-scripts)
   - [Build Script](#build-script)
 - [Workflow Configuration](#workflow-configuration)
+  - [Automatic Dependency Updates](#automatic-dependency-updates)
+  - [CodeQL Security Analysis](#codeql-security-analysis)
   - [Issue and Pull Request Cleanup](#issue-and-pull-request-cleanup)
   - [Label Synchronization](#label-synchronization)
 - [Additional Resources](#additional-resources)
@@ -41,6 +43,41 @@ cleaning, building, testing, linting, formatting, and preparing the project.
 Our Continuous Integration (CI) pipeline is configured to ensure that the project
 maintains high quality through automated testing, linting, formatting, and
 security scans.
+
+### Automatic Dependency Updates
+
+The project uses an automated workflow with **Dependabot** to keep dependencies
+up to date and ensure security updates are applied in a timely manner.
+
+- Dependencies are checked for updates **monthly**, including **GitHub Actions**
+  and **npm packages**.
+- Critical security updates are applied automatically.
+- Dependabot checks the defined package sources at regular intervals and creates
+  **pull requests** for new versions.
+- Changes can be manually reviewed, merged, or declined.
+- Unwanted updates can be closed or ignored through Dependabot configuration.
+- Pull requests are assigned to a responsible maintainer and labeled for easy identification.
+- Commit messages follow a consistent pattern for better traceability.
+
+Dependabot ensures that the project remains up to date and secure while allowing
+control over updates through configurable settings.
+
+### CodeQL Security Analysis
+
+The project uses **CodeQL** to detect vulnerabilities and potential security risks
+in the codebase. This automated workflow ensures continuous security analysis.
+
+- CodeQL runs on **pushes to `main`** and **pull requests**.
+- A scheduled scan is executed **weekly**.
+- The analysis covers **JavaScript** and **TypeScript** code.
+- The repository is checked out, and CodeQL is initialized.
+- Code is analyzed using CodeQL’s security rules.
+- Findings are reported under the repository’s **Security tab** on GitHub.
+
+By detecting security vulnerabilities before they reach production, the workflow
+provides automated security scanning without manual intervention and ensures
+compliance with best security practices. The CodeQL workflow helps maintain a
+secure codebase by identifying risks early in the development cycle.
 
 ### Issue and Pull Request Cleanup
 
