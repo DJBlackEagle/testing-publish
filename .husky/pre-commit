@@ -1,0 +1,9 @@
+# shellcheck disable=SC2148
+if [ "$GITHUB_ACTIONS" = "true" ]; then
+  exit 0
+fi
+
+for file in $(git diff --cached --name-only --diff-filter=ACM | grep -E '\.sh$|^\.husky/(pre|post)-\w+$|^\.husky/commit-msg$'); do
+  echo "Set the executable bit for $file"
+  git update-index --chmod=+x "$file"
+done

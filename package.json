@@ -48,10 +48,13 @@
     "format:file": "echo \"Not implemented yet (format:file).\" && exit 0",
     "format:fix": "echo \"Not implemented yet (format:fix).\" && exit 0",
     "format:fix:file": "echo \"Not implemented yet (format:fix:file).\" && exit 0",
-    "validate": "echo \"Not implemented yet (validate).\" && exit 0"
+    "validate": "echo \"Not implemented yet (validate).\" && exit 0",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@types/node": "^22.13.11",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
     "typescript": "^5.8.2"
   }
 }
