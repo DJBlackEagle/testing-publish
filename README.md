@@ -50,6 +50,7 @@ in your project.
 - [Node.js][REF_EXTERN_NODEJS] (>=18.0.0)
 - [npm][REF_EXTERN_NPM] or [pnpm][REF_EXTERN_PNPM] or [Yarn][REF_EXTERN_YARN]
 - [commitlint][REF_EXTERN_COMMITLINT] (>=19.8.0)
+- [ESLint][REF_EXTERN_ESLINT] (>=9.0.0)
 - [Prettier][REF_EXTERN_PRETTIER] (>=3.5.0)
 
 ### Installation
@@ -59,13 +60,13 @@ package manager:
 
 ```sh
 # npm
-npm install --save-dev @djblackeagle/code-style-nodejs prettier @commitlint/cli @commitlint/config-conventional
+npm install --save-dev @djblackeagle/code-style-nodejs prettier @commitlint/cli @commitlint/config-conventional eslint
 
 # pnpm
-pnpm add --save-dev @djblackeagle/code-style-nodejs prettier @commitlint/cli @commitlint/config-conventional
+pnpm add --save-dev @djblackeagle/code-style-nodejs prettier @commitlint/cli @commitlint/config-conventional eslint
 
 # Yarn
-yarn add --dev @djblackeagle/code-style-nodejs prettier @commitlint/cli @commitlint/config-conventional
+yarn add --dev @djblackeagle/code-style-nodejs prettier @commitlint/cli @commitlint/config-conventional eslint
 ```
 
 ### Configuration
@@ -80,6 +81,19 @@ import { codeStyleNodeJs } from '@djblackeagle/code-style-nodejs';
 const config = {
   ...(await codeStyleNodeJs.commitlint.configs.base()),
 };
+
+export default config;
+```
+
+#### ESLint <!-- omit in toc -->
+
+Create or modify your `eslint.config.mjs` file and add the following:
+
+```javascript
+import { codeStyle } from '@djblackeagle/code-style';
+
+/** @type {import('eslint').Linter.Config[]} */
+const config = [...(await codeStyle.eslint.configs.base(''))];
 
 export default config;
 ```
