@@ -36,8 +36,6 @@ Please check if your pull request fulfills the following requirements.
 
 <!-- Please describe the current behavior that you are modifying, or link to a relevant issue. -->
 
-Issue Number: N/A
-
 ## Is there anything you'd like reviewers to focus on?
 
 <!-- Please describe the current behavior that you are modifying, or link to a relevant issue. -->

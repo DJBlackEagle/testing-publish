@@ -1,0 +1,57 @@
+{
+  "name": "@djblackeagle/code-style-nodejs",
+  "version": "0.0.1",
+  "description": "Unified configuration for consistent code style, leveraging popular tools like ESLint, Prettier, and Commitlint to ensure code quality, readability, and standardized commit messages.",
+  "homepage": "https://github.com/DJBlackEagle/code-style-nodejs#readme",
+  "bugs": {
+    "url": "https://github.com/DJBlackEagle/code-style-nodejs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DJBlackEagle/code-style-nodejs.git"
+  },
+  "license": "MIT",
+  "author": "DJBlackEagle <djblackeagle-dev@djblackeagle.services>",
+  "type": "commonjs",
+  "packageManager": "pnpm@10.6.5",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "./dist",
+    "./CHANGELOG.md",
+    "./CODE_OF_CONDUCT.md",
+    "./CONTRIBUTING.md",
+    "./DEVELOPMENT.md",
+    "./LICENSE.md",
+    "./README.md",
+    "./SECURITY.md",
+    "./package.json"
+  ],
+  "scripts": {
+    "clean": "pnpm run clean:artifacts && pnpm run clean:build && pnpm run clean:cache && pnpm run clean:node",
+    "clean:artifacts": "rm -rf ./.artifacts",
+    "clean:build": "rm -rf ./dist",
+    "clean:cache": "rm -rf ./.cache",
+    "clean:node": "rm -rf ./node_modules",
+    "build": "pnpm run clean:build && tsc -p ./tsconfig.build.json",
+    "test": "echo \"Not implemented yet (test).\" && exit 0",
+    "test:coverage": "echo \"Not implemented yet (test:coverage).\" && exit 0",
+    "test:watch": "echo \"Not implemented yet (test:watch).\" && exit 0",
+    "test:watch:onlychanged": "echo \"Not implemented yet (test:watch:onlychanged).\" && exit 0",
+    "lint": "echo \"Not implemented yet (lint).\" && exit 0",
+    "lint:file": "echo \"Not implemented yet (lint:file).\" && exit 0",
+    "lint:fix": "echo \"Not implemented yet (lint:fix).\" && exit 0",
+    "lint:fix:file": "echo \"Not implemented yet (lint:fix:file).\" && exit 0",
+    "format": "echo \"Not implemented yet (format).\" && exit 0",
+    "format:file": "echo \"Not implemented yet (format:file).\" && exit 0",
+    "format:fix": "echo \"Not implemented yet (format:fix).\" && exit 0",
+    "format:fix:file": "echo \"Not implemented yet (format:fix:file).\" && exit 0",
+    "validate": "echo \"Not implemented yet (validate).\" && exit 0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}

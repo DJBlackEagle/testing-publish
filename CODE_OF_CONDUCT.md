@@ -139,7 +139,7 @@ For answers to common questions about this code of conduct, see the FAQ at
 [REF_INTERN_FILE_MD_DEVELOPMENT]: DEVELOPMENT.md
 [REF_INTERN_FILE_MD_LICENSE]: LICENSE.md
 [REF_INTERN_FILE_MD_README]: README.md
-[REF_INTERN_URL_SECURITY]: SECURITY.md
+[REF_INTERN_FILE_MD_SECURITY]: SECURITY.md
 [REF_INTERN_URL_ACTIONS]: https://github.com/DJBlackEagle/code-style-nodejs/actions
 [REF_INTERN_URL_CODESTYLE]: https://github.com/DJBlackEagle/code-style-nodejs
 [REF_INTERN_URL_COMMITS]: https://github.com/DJBlackEagle/code-style-nodejs/commits/main/
