@@ -9,6 +9,7 @@ contributors who want to understand how the project works behind the scenes.
 - [Package.json Scripts](#packagejson-scripts)
   - [Cleaning Scripts](#cleaning-scripts)
   - [Build Script](#build-script)
+  - [Linting Scripts](#linting-scripts)
   - [Formatting Scripts](#formatting-scripts)
   - [Preparation Script](#preparation-script)
 - [Workflow Configuration](#workflow-configuration)
@@ -39,6 +40,18 @@ cleaning, building, testing, linting, formatting, and preparing the project.
 - **build**  
   First, it cleans the build directory (using `clean:build`) and then compiles
   the project using the TypeScript compiler with the configuration specified in `tsconfig.build.json`.
+
+### Linting Scripts
+
+- **lint**  
+  Runs ESLint on the entire project to analyze code for potential issues and to
+  enforce code style.
+- **lint:file**  
+  Similar to `lint`, but can be targeted to specific files or directories.
+- **lint:fix**  
+  Runs ESLint with the `--fix` option to automatically correct fixable issues.
+- **lint:fix:file**  
+  Similar to `lint:fix`, but intended for specific files.
 
 ### Formatting Scripts
 
