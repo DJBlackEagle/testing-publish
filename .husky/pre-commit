@@ -7,3 +7,5 @@ for file in $(git diff --cached --name-only --diff-filter=ACM | grep -E '\.sh$|^
   echo "Set the executable bit for $file"
   git update-index --chmod=+x "$file"
 done
+
+pnpm exec lint-staged

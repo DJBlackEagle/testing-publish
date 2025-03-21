@@ -9,6 +9,8 @@ contributors who want to understand how the project works behind the scenes.
 - [Package.json Scripts](#packagejson-scripts)
   - [Cleaning Scripts](#cleaning-scripts)
   - [Build Script](#build-script)
+  - [Formatting Scripts](#formatting-scripts)
+  - [Preparation Script](#preparation-script)
 - [Workflow Configuration](#workflow-configuration)
   - [Automatic Dependency Updates](#automatic-dependency-updates)
   - [CodeQL Security Analysis](#codeql-security-analysis)
@@ -37,6 +39,23 @@ cleaning, building, testing, linting, formatting, and preparing the project.
 - **build**  
   First, it cleans the build directory (using `clean:build`) and then compiles
   the project using the TypeScript compiler with the configuration specified in `tsconfig.build.json`.
+
+### Formatting Scripts
+
+- **format**  
+  Uses Prettier to check the code formatting across the project.
+- **format:file**  
+  Similar to `format`, but targets specific files.
+- **format:fix**  
+  Runs Prettier with the `--write` option to automatically format the code.
+- **format:fix:file**  
+  Similar to `format:fix`, but intended for specific files.
+
+### Preparation Script
+
+- **prepare**  
+  Sets up Husky by installing Git hooks. These hooks enforce code quality and
+  commit message standards before commits are finalized.
 
 ## Workflow Configuration
 
@@ -136,8 +155,8 @@ or CI configurations are introduced.
 [REF_INTERN_URL_ACTIONS]: https://github.com/DJBlackEagle/code-style-nodejs/actions
 [REF_INTERN_URL_CODESTYLE]: https://github.com/DJBlackEagle/code-style-nodejs
 [REF_INTERN_URL_COMMITS]: https://github.com/DJBlackEagle/code-style-nodejs/commits/main/
-[REF_INTERN_URL_COMMIT_MESSAGE_FORMAT]: <https://www.conventionalcommits.org/en/v1.0.0/>
-[REF_INTERN_URL_CONTRIBUTING_GENERATOR]: <https://contributing.md/generator>
+[REF_INTERN_URL_COMMIT_MESSAGE_FORMAT]: https://www.conventionalcommits.org/en/v1.0.0/
+[REF_INTERN_URL_CONTRIBUTING_GENERATOR]: https://contributing.md/generator
 [REF_INTERN_URL_GIT]: https://github.com/DJBlackEagle/code-style-nodejs
 [REF_INTERN_URL_ISSUE_LIST]: https://github.com/DJBlackEagle/code-style-nodejs/issues
 [REF_INTERN_URL_ISSUE_NEW]: https://github.com/DJBlackEagle/code-style-nodejs/issues/new/choose

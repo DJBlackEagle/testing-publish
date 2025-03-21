@@ -82,8 +82,8 @@ This project is licensed under the [MIT License][REF_INTERN_FILE_MD_LICENSE].
 [REF_INTERN_URL_ACTIONS]: https://github.com/DJBlackEagle/code-style-nodejs/actions
 [REF_INTERN_URL_CODESTYLE]: https://github.com/DJBlackEagle/code-style-nodejs
 [REF_INTERN_URL_COMMITS]: https://github.com/DJBlackEagle/code-style-nodejs/commits/main/
-[REF_INTERN_URL_COMMIT_MESSAGE_FORMAT]: <https://www.conventionalcommits.org/en/v1.0.0/>
-[REF_INTERN_URL_CONTRIBUTING_GENERATOR]: <https://contributing.md/generator>
+[REF_INTERN_URL_COMMIT_MESSAGE_FORMAT]: https://www.conventionalcommits.org/en/v1.0.0/
+[REF_INTERN_URL_CONTRIBUTING_GENERATOR]: https://contributing.md/generator
 [REF_INTERN_URL_GIT]: https://github.com/DJBlackEagle/code-style-nodejs
 [REF_INTERN_URL_ISSUE_LIST]: https://github.com/DJBlackEagle/code-style-nodejs/issues
 [REF_INTERN_URL_ISSUE_NEW]: https://github.com/DJBlackEagle/code-style-nodejs/issues/new/choose
