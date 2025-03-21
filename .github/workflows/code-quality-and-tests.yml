@@ -106,5 +106,4 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-
       - name: Run Jest 🃏
-        # run: pnpm exec jest --ci --config=jest.config.workflow-ci.mjs
-        run: echo Command disabled
+        run: pnpm exec jest --ci --config=jest.config.workflow-ci.mjs
