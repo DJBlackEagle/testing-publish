@@ -1,0 +1,6 @@
+# shellcheck disable=SC2148,SC2086
+if [ "$GITHUB_ACTIONS" = "true" ]; then
+  exit 0
+fi
+
+pnpm exec commitlint --edit $1
