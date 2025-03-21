@@ -58,7 +58,7 @@ expectations for behavior within the project.
 ## Security
 
 If you discover a security vulnerability in `@djblackeagle/code-style-nodejs`, please
-follow our [Security Guidelines][REF_INTERN_URL_SECURITY] to report it responsibly.
+follow our [Security Guidelines][REF_INTERN_FILE_MD_SECURITY] to report it responsibly.
 
 ## License
 
@@ -67,7 +67,7 @@ This project is licensed under the [MIT License][REF_INTERN_FILE_MD_LICENSE].
 ## Additional Resources
 
 - [Development Guidelines][REF_INTERN_FILE_MD_DEVELOPMENT] – For detailed information
-  on development, including explanations of package.json scripts and CI configuration.
+  on development, including explanations of package.json scripts and workflow configuration.
 
 [REF_INTERN_EMAIL_ADDRESS_COD]: mailto:djblackeagle-dev@djblackeagle.services
 [REF_INTERN_EMAIL_ADDRESS_OWNER]: mailto:djblackeagle-dev@djblackeagle.services
@@ -78,7 +78,7 @@ This project is licensed under the [MIT License][REF_INTERN_FILE_MD_LICENSE].
 [REF_INTERN_FILE_MD_DEVELOPMENT]: DEVELOPMENT.md
 [REF_INTERN_FILE_MD_LICENSE]: LICENSE.md
 [REF_INTERN_FILE_MD_README]: README.md
-[REF_INTERN_URL_SECURITY]: SECURITY.md
+[REF_INTERN_FILE_MD_SECURITY]: SECURITY.md
 [REF_INTERN_URL_ACTIONS]: https://github.com/DJBlackEagle/code-style-nodejs/actions
 [REF_INTERN_URL_CODESTYLE]: https://github.com/DJBlackEagle/code-style-nodejs
 [REF_INTERN_URL_COMMITS]: https://github.com/DJBlackEagle/code-style-nodejs/commits/main/

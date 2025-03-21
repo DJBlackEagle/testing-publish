@@ -6,10 +6,35 @@ contributors who want to understand how the project works behind the scenes.
 
 ## Table of Contents <!-- omit in toc -->
 
+- [Package.json Scripts](#packagejson-scripts)
+  - [Cleaning Scripts](#cleaning-scripts)
+  - [Build Script](#build-script)
 - [Workflow Configuration](#workflow-configuration)
   - [Issue and Pull Request Cleanup](#issue-and-pull-request-cleanup)
   - [Label Synchronization](#label-synchronization)
 - [Additional Resources](#additional-resources)
+
+## Package.json Scripts
+
+This section explains the purpose and functionality of the various scripts defined
+in the `package.json` file. These scripts are used to streamline tasks such as
+cleaning, building, testing, linting, formatting, and preparing the project.
+
+### Cleaning Scripts
+
+- **clean**  
+  Runs multiple cleaning tasks sequentially. It removes build artifacts, cached files,
+  and node modules by calling the following sub-scripts:
+  - **clean:artifacts**: Deletes the `./.artifacts` directory.
+  - **clean:build**: Removes the `./dist` directory where the build output is stored.
+  - **clean:cache**: Deletes the `./.cache` directory.
+  - **clean:node**: Removes the `./node_modules` directory.
+
+### Build Script
+
+- **build**  
+  First, it cleans the build directory (using `clean:build`) and then compiles
+  the project using the TypeScript compiler with the configuration specified in `tsconfig.build.json`.
 
 ## Workflow Configuration
 
@@ -70,7 +95,7 @@ or CI configurations are introduced.
 [REF_INTERN_FILE_MD_DEVELOPMENT]: DEVELOPMENT.md
 [REF_INTERN_FILE_MD_LICENSE]: LICENSE.md
 [REF_INTERN_FILE_MD_README]: README.md
-[REF_INTERN_URL_SECURITY]: SECURITY.md
+[REF_INTERN_FILE_MD_SECURITY]: SECURITY.md
 [REF_INTERN_URL_ACTIONS]: https://github.com/DJBlackEagle/code-style-nodejs/actions
 [REF_INTERN_URL_CODESTYLE]: https://github.com/DJBlackEagle/code-style-nodejs
 [REF_INTERN_URL_COMMITS]: https://github.com/DJBlackEagle/code-style-nodejs/commits/main/
