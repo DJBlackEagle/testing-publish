@@ -78,8 +78,7 @@ jobs:
       - name: Run Prettier 📃
         run: pnpm exec prettier --check --ignore-unknown .
       - name: Run ESLint 📝
-        # run: pnpm exec eslint .
-        run: echo Command disabled
+        run: pnpm exec eslint .
 
   cqat_test_units:
     name: Unit tests

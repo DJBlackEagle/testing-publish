@@ -40,10 +40,10 @@
     "test:coverage": "echo \"Not implemented yet (test:coverage).\" && exit 0",
     "test:watch": "echo \"Not implemented yet (test:watch).\" && exit 0",
     "test:watch:onlychanged": "echo \"Not implemented yet (test:watch:onlychanged).\" && exit 0",
-    "lint": "echo \"Not implemented yet (lint).\" && exit 0",
-    "lint:file": "echo \"Not implemented yet (lint:file).\" && exit 0",
-    "lint:fix": "echo \"Not implemented yet (lint:fix).\" && exit 0",
-    "lint:fix:file": "echo \"Not implemented yet (lint:fix:file).\" && exit 0",
+    "lint": "eslint .",
+    "lint:file": "eslint",
+    "lint:fix": "eslint --fix .",
+    "lint:fix:file": "eslint --fix",
     "format": "prettier --check --ignore-unknown .",
     "format:file": "prettier --check --ignore-unknown",
     "format:fix": "prettier --write --ignore-unknown .",
@@ -55,9 +55,22 @@
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
     "@types/node": "^22.13.11",
+    "eslint": "^9.22.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.0",
     "prettier": "^3.5.3",
     "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@eslint/compat": "^1.2.7",
+    "@eslint/js": "^9.22.0",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^8.27.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsdoc": "^50.6.8",
+    "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^16.0.0",
+    "typescript-eslint": "^8.27.0"
   }
 }
