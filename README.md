@@ -90,10 +90,10 @@ export default config;
 Create or modify your `eslint.config.mjs` file and add the following:
 
 ```javascript
-import { codeStyle } from '@djblackeagle/code-style';
+import { codeStyleNodeJs } from '@djblackeagle/code-style-nodejs';
 
 /** @type {import('eslint').Linter.Config[]} */
-const config = [...(await codeStyle.eslint.configs.base(''))];
+const config = [...(await codeStyleNodeJs.eslint.configs.base(''))];
 
 export default config;
 ```
@@ -176,3 +176,4 @@ This project is licensed under the [MIT License][REF_INTERN_FILE_MD_LICENSE].
 [REF_EXTERN_YARN]: https://yarnpkg.com
 [REF_EXTERN_PRETTIER]: https://prettier.io
 [REF_EXTERN_COMMITLINT]: https://commitlint.js.org/
+[REF_EXTERN_ESLINT]: https://eslint.org
