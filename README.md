@@ -177,3 +177,5 @@ This project is licensed under the [MIT License][REF_INTERN_FILE_MD_LICENSE].
 [REF_EXTERN_PRETTIER]: https://prettier.io
 [REF_EXTERN_COMMITLINT]: https://commitlint.js.org/
 [REF_EXTERN_ESLINT]: https://eslint.org
+
+<!-- markdownlint-disable-file MD013 -->
