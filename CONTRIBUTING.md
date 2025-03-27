@@ -1,4 +1,4 @@
-# Contributing to @djblackeagle/code-style-nodejs <!-- omit in toc -->
+# Contributing to @djblackeagle/testing-publish <!-- omit in toc -->
 
 First off, thanks for taking the time to contribute! ❤️
 
@@ -147,7 +147,7 @@ Once it's filed:
 ### Suggesting Enhancements
 
 This section guides you through submitting an enhancement suggestion for
-@djblackeagle/code-style-nodejs, **including completely new features and minor
+@djblackeagle/testing-publish, **including completely new features and minor
 improvements to existing functionality**. Following these guidelines will
 help maintainers and the community to understand your suggestion and find
 related suggestions.
@@ -176,7 +176,7 @@ Enhancement suggestions are tracked as [issues][REF_INTERN_URL_ISSUE_LIST].
 - **Describe the current behavior** and **explain which behavior you expected to
   see instead** and why. At this point you can also tell which alternatives do
   not work for you.
-- **Explain why this enhancement would be useful** to most @djblackeagle/code-style-nodejs
+- **Explain why this enhancement would be useful** to most @djblackeagle/testing-publish
   users. You may also want to point out the other projects that solved it better
   and which could serve as inspiration.
 
@@ -329,27 +329,27 @@ This guide is based on the [contributing.md][REF_INTERN_URL_CONTRIBUTING_GENERAT
 [REF_INTERN_FILE_MD_LICENSE]: LICENSE.md
 [REF_INTERN_FILE_MD_README]: README.md
 [REF_INTERN_FILE_MD_SECURITY]: SECURITY.md
-[REF_INTERN_URL_ACTIONS]: https://github.com/DJBlackEagle/code-style-nodejs/actions
-[REF_INTERN_URL_CODESTYLE]: https://github.com/DJBlackEagle/code-style-nodejs
-[REF_INTERN_URL_COMMITS]: https://github.com/DJBlackEagle/code-style-nodejs/commits/main/
+[REF_INTERN_URL_ACTIONS]: https://github.com/DJBlackEagle/testing-publish/actions
+[REF_INTERN_URL_CODESTYLE]: https://github.com/DJBlackEagle/testing-publish
+[REF_INTERN_URL_COMMITS]: https://github.com/DJBlackEagle/testing-publish/commits/main/
 [REF_INTERN_URL_COMMIT_MESSAGE_FORMAT]: https://www.conventionalcommits.org/en/v1.0.0/
 [REF_INTERN_URL_CONTRIBUTING_GENERATOR]: https://contributing.md/generator
-[REF_INTERN_URL_GIT]: https://github.com/DJBlackEagle/code-style-nodejs
-[REF_INTERN_URL_ISSUE_LIST]: https://github.com/DJBlackEagle/code-style-nodejs/issues
-[REF_INTERN_URL_ISSUE_NEW]: https://github.com/DJBlackEagle/code-style-nodejs/issues/new/choose
-[REF_INTERN_URL_MD_CHANGELOG]: https://github.com/DJBlackEagle/code-style-nodejs/blob/main/CHANGELOG.md
-[REF_INTERN_URL_MD_CODE_OF_CONDUCT]: https://github.com/DJBlackEagle/code-style-nodejs/blob/main/CODE_OF_CONDUCT.md
-[REF_INTERN_URL_MD_CONTRIBUTING]: https://github.com/DJBlackEagle/code-style-nodejs/blob/main/CONTRIBUTING.md
-[REF_INTERN_URL_MD_DEVELOPMENT]: https://github.com/DJBlackEagle/code-style-nodejs/blob/main/DEVELOPMENT.md
-[REF_INTERN_URL_MD_LICENSE]: https://github.com/DJBlackEagle/code-style-nodejs/blob/main/LICENSE.md
-[REF_INTERN_URL_MD_README]: https://github.com/DJBlackEagle/code-style-nodejs/blob/main/README.md
-[REF_INTERN_URL_MD_SECURITY]: https://github.com/DJBlackEagle/code-style-nodejs/blob/main/SECURITY.md
-[REF_INTERN_URL_NPMJS_PACKAGE]: https://www.npmjs.com/package/@djblackeagle/code-style-nodejs
-[REF_INTERN_URL_PULLREQUEST]: https://github.com/DJBlackEagle/code-style-nodejs/pulls
-[REF_INTERN_URL_VULNERABILITY]: https://github.com/DJBlackEagle/code-style-nodejs/security
-[REF_INTERN_URL_VULNERABILITY_NEW]: https://github.com/DJBlackEagle/code-style-nodejs/security/advisories/new
-[REF_INTERN_URL_WORKFLOW_CQAT]: https://github.com/DJBlackEagle/code-style-nodejs/actions/workflows/code-quality-and-tests.yml
-[REF_INTERN_URL_WORKFLOW_CODEQL]: https://github.com/DJBlackEagle/code-style-nodejs/actions/workflows/codeql.yml
+[REF_INTERN_URL_GIT]: https://github.com/DJBlackEagle/testing-publish
+[REF_INTERN_URL_ISSUE_LIST]: https://github.com/DJBlackEagle/testing-publish/issues
+[REF_INTERN_URL_ISSUE_NEW]: https://github.com/DJBlackEagle/testing-publish/issues/new/choose
+[REF_INTERN_URL_MD_CHANGELOG]: https://github.com/DJBlackEagle/testing-publish/blob/main/CHANGELOG.md
+[REF_INTERN_URL_MD_CODE_OF_CONDUCT]: https://github.com/DJBlackEagle/testing-publish/blob/main/CODE_OF_CONDUCT.md
+[REF_INTERN_URL_MD_CONTRIBUTING]: https://github.com/DJBlackEagle/testing-publish/blob/main/CONTRIBUTING.md
+[REF_INTERN_URL_MD_DEVELOPMENT]: https://github.com/DJBlackEagle/testing-publish/blob/main/DEVELOPMENT.md
+[REF_INTERN_URL_MD_LICENSE]: https://github.com/DJBlackEagle/testing-publish/blob/main/LICENSE.md
+[REF_INTERN_URL_MD_README]: https://github.com/DJBlackEagle/testing-publish/blob/main/README.md
+[REF_INTERN_URL_MD_SECURITY]: https://github.com/DJBlackEagle/testing-publish/blob/main/SECURITY.md
+[REF_INTERN_URL_NPMJS_PACKAGE]: https://www.npmjs.com/package/@djblackeagle/testing-publish
+[REF_INTERN_URL_PULLREQUEST]: https://github.com/DJBlackEagle/testing-publish/pulls
+[REF_INTERN_URL_VULNERABILITY]: https://github.com/DJBlackEagle/testing-publish/security
+[REF_INTERN_URL_VULNERABILITY_NEW]: https://github.com/DJBlackEagle/testing-publish/security/advisories/new
+[REF_INTERN_URL_WORKFLOW_CQAT]: https://github.com/DJBlackEagle/testing-publish/actions/workflows/code-quality-and-tests.yml
+[REF_INTERN_URL_WORKFLOW_CODEQL]: https://github.com/DJBlackEagle/testing-publish/actions/workflows/codeql.yml
 [REF_EXTERN_NODEJS]: https://nodejs.org
 [REF_EXTERN_NPM]: https://www.npmjs.com
 [REF_EXTERN_PNPM]: https://pnpm.io

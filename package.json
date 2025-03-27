@@ -1,14 +1,14 @@
 {
-  "name": "@djblackeagle/code-style-nodejs",
+  "name": "@djblackeagle/testing-publish",
   "version": "0.0.1",
   "description": "Unified configuration for consistent code style, leveraging popular tools like ESLint, Prettier, and Commitlint to ensure code quality, readability, and standardized commit messages.",
-  "homepage": "https://github.com/DJBlackEagle/code-style-nodejs#readme",
+  "homepage": "https://github.com/DJBlackEagle/testing-publish#readme",
   "bugs": {
-    "url": "https://github.com/DJBlackEagle/code-style-nodejs/issues"
+    "url": "https://github.com/DJBlackEagle/testing-publish/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DJBlackEagle/code-style-nodejs.git"
+    "url": "git+https://github.com/DJBlackEagle/testing-publish.git"
   },
   "license": "MIT",
   "author": "DJBlackEagle <djblackeagle-dev@djblackeagle.services>",
