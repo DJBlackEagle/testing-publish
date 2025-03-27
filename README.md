@@ -1,11 +1,11 @@
-# Welcome to @djblackeagle/code-style-nodejs <!-- omit in toc -->
+# Welcome to @djblackeagle/testing-publish <!-- omit in toc -->
 
-[![npm version](https://img.shields.io/npm/v/@djblackeagle/code-style-nodejs.svg)][REF_INTERN_URL_NPMJS_PACKAGE]
-[![Downloads](https://img.shields.io/npm/dm/@djblackeagle/code-style-nodejs.svg)][REF_INTERN_URL_NPMJS_PACKAGE]
+[![npm version](https://img.shields.io/npm/v/@djblackeagle/testing-publish.svg)][REF_INTERN_URL_NPMJS_PACKAGE]
+[![Downloads](https://img.shields.io/npm/dm/@djblackeagle/testing-publish.svg)][REF_INTERN_URL_NPMJS_PACKAGE]
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)][REF_INTERN_FILE_MD_LICENSE]
-[![CodeQL](https://github.com/DJBlackEagle/code-style-nodejs/workflows/CodeQL/badge.svg)][REF_INTERN_URL_WORKFLOW_CODEQL]
-[![Build Status](https://github.com/DJBlackEagle/code-style-nodejs/workflows/Code%20quality%20and%20tests/badge.svg)][REF_INTERN_URL_WORKFLOW_CQAT]
-[![Code Style](https://img.shields.io/badge/code_style-@djblackeagle/code--style--nodejs-blue.svg)][REF_INTERN_URL_CODESTYLE]
+[![CodeQL](https://github.com/DJBlackEagle/testing-publish/workflows/CodeQL/badge.svg)][REF_INTERN_URL_WORKFLOW_CODEQL]
+[![Build Status](https://github.com/DJBlackEagle/testing-publish/workflows/Code%20quality%20and%20tests/badge.svg)][REF_INTERN_URL_WORKFLOW_CQAT]
+[![Code Style](https://img.shields.io/badge/code_style-@djblackeagle/testing--publish-blue.svg)][REF_INTERN_URL_CODESTYLE]
 
 Unified configuration for consistent code style, leveraging popular tools like
 ESLint, Prettier, and Commitlint to ensure code quality, readability, and
@@ -26,7 +26,7 @@ standardized commit messages.
 
 ## Benefits
 
-Using `@djblackeagle/code-style-nodejs` offers several advantages for your projects:
+Using `@djblackeagle/testing-publish` offers several advantages for your projects:
 
 - **Consistency:** Enforce a unified code style across all your JavaScript and
   TypeScript projects.
@@ -42,7 +42,7 @@ Using `@djblackeagle/code-style-nodejs` offers several advantages for your proje
 
 ## Getting Started
 
-This section will guide you through setting up and configuring `@djblackeagle/code-style-nodejs`
+This section will guide you through setting up and configuring `@djblackeagle/testing-publish`
 in your project.
 
 ### Requirements
@@ -55,18 +55,18 @@ in your project.
 
 ### Installation
 
-Install `@djblackeagle/code-style-nodejs` and its dependencies using your preferred
+Install `@djblackeagle/testing-publish` and its dependencies using your preferred
 package manager:
 
 ```sh
 # npm
-npm install --save-dev @djblackeagle/code-style-nodejs prettier @commitlint/cli @commitlint/config-conventional eslint
+npm install --save-dev @djblackeagle/testing-publish prettier @commitlint/cli @commitlint/config-conventional eslint
 
 # pnpm
-pnpm add --save-dev @djblackeagle/code-style-nodejs prettier @commitlint/cli @commitlint/config-conventional eslint
+pnpm add --save-dev @djblackeagle/testing-publish prettier @commitlint/cli @commitlint/config-conventional eslint
 
 # Yarn
-yarn add --dev @djblackeagle/code-style-nodejs prettier @commitlint/cli @commitlint/config-conventional eslint
+yarn add --dev @djblackeagle/testing-publish prettier @commitlint/cli @commitlint/config-conventional eslint
 ```
 
 ### Configuration
@@ -76,7 +76,7 @@ yarn add --dev @djblackeagle/code-style-nodejs prettier @commitlint/cli @commitl
 Create or modify your `commitlint.config.mjs` file and add the following:
 
 ```javascript
-import { codeStyleNodeJs } from '@djblackeagle/code-style-nodejs';
+import { codeStyleNodeJs } from '@djblackeagle/testing-publish';
 
 const config = {
   ...(await codeStyleNodeJs.commitlint.configs.base()),
@@ -90,7 +90,7 @@ export default config;
 Create or modify your `eslint.config.mjs` file and add the following:
 
 ```javascript
-import { codeStyleNodeJs } from '@djblackeagle/code-style-nodejs';
+import { codeStyleNodeJs } from '@djblackeagle/testing-publish';
 
 /** @type {import('eslint').Linter.Config[]} */
 const config = [...(await codeStyleNodeJs.eslint.configs.base(''))];
@@ -103,7 +103,7 @@ export default config;
 Create or modify your `prettier.config.mjs` file and add the following:
 
 ```javascript
-import { codeStyleNodeJs } from '@djblackeagle/code-style-nodejs';
+import { codeStyleNodeJs } from '@djblackeagle/testing-publish';
 
 const config = {
   ...codeStyleNodeJs.prettier.configs.base(),
@@ -115,7 +115,7 @@ export default config;
 ## Contributing
 
 We welcome contributions from the community! If you're interested in helping to
-improve `@djblackeagle/code-style-nodejs`, please take a look at our
+improve `@djblackeagle/testing-publish`, please take a look at our
 [Contributing Guidelines][REF_INTERN_FILE_MD_CONTRIBUTING] for more information on
 how to get started.
 
@@ -127,7 +127,7 @@ expectations for behavior within the project.
 
 ## Security
 
-If you discover a security vulnerability in `@djblackeagle/code-style-nodejs`, please
+If you discover a security vulnerability in `@djblackeagle/testing-publish`, please
 follow our [Security Guidelines][REF_INTERN_FILE_MD_SECURITY] to report it responsibly.
 
 ## License
@@ -149,27 +149,27 @@ This project is licensed under the [MIT License][REF_INTERN_FILE_MD_LICENSE].
 [REF_INTERN_FILE_MD_LICENSE]: LICENSE.md
 [REF_INTERN_FILE_MD_README]: README.md
 [REF_INTERN_FILE_MD_SECURITY]: SECURITY.md
-[REF_INTERN_URL_ACTIONS]: https://github.com/DJBlackEagle/code-style-nodejs/actions
-[REF_INTERN_URL_CODESTYLE]: https://github.com/DJBlackEagle/code-style-nodejs
-[REF_INTERN_URL_COMMITS]: https://github.com/DJBlackEagle/code-style-nodejs/commits/main/
+[REF_INTERN_URL_ACTIONS]: https://github.com/DJBlackEagle/testing-publish/actions
+[REF_INTERN_URL_CODESTYLE]: https://github.com/DJBlackEagle/testing-publish
+[REF_INTERN_URL_COMMITS]: https://github.com/DJBlackEagle/testing-publish/commits/main/
 [REF_INTERN_URL_COMMIT_MESSAGE_FORMAT]: https://www.conventionalcommits.org/en/v1.0.0/
 [REF_INTERN_URL_CONTRIBUTING_GENERATOR]: https://contributing.md/generator
-[REF_INTERN_URL_GIT]: https://github.com/DJBlackEagle/code-style-nodejs
-[REF_INTERN_URL_ISSUE_LIST]: https://github.com/DJBlackEagle/code-style-nodejs/issues
-[REF_INTERN_URL_ISSUE_NEW]: https://github.com/DJBlackEagle/code-style-nodejs/issues/new/choose
-[REF_INTERN_URL_MD_CHANGELOG]: https://github.com/DJBlackEagle/code-style-nodejs/blob/main/CHANGELOG.md
-[REF_INTERN_URL_MD_CODE_OF_CONDUCT]: https://github.com/DJBlackEagle/code-style-nodejs/blob/main/CODE_OF_CONDUCT.md
-[REF_INTERN_URL_MD_CONTRIBUTING]: https://github.com/DJBlackEagle/code-style-nodejs/blob/main/CONTRIBUTING.md
-[REF_INTERN_URL_MD_DEVELOPMENT]: https://github.com/DJBlackEagle/code-style-nodejs/blob/main/DEVELOPMENT.md
-[REF_INTERN_URL_MD_LICENSE]: https://github.com/DJBlackEagle/code-style-nodejs/blob/main/LICENSE.md
-[REF_INTERN_URL_MD_README]: https://github.com/DJBlackEagle/code-style-nodejs/blob/main/README.md
-[REF_INTERN_URL_MD_SECURITY]: https://github.com/DJBlackEagle/code-style-nodejs/blob/main/SECURITY.md
-[REF_INTERN_URL_NPMJS_PACKAGE]: https://www.npmjs.com/package/@djblackeagle/code-style-nodejs
-[REF_INTERN_URL_PULLREQUEST]: https://github.com/DJBlackEagle/code-style-nodejs/pulls
-[REF_INTERN_URL_VULNERABILITY]: https://github.com/DJBlackEagle/code-style-nodejs/security
-[REF_INTERN_URL_VULNERABILITY_NEW]: https://github.com/DJBlackEagle/code-style-nodejs/security/advisories/new
-[REF_INTERN_URL_WORKFLOW_CQAT]: https://github.com/DJBlackEagle/code-style-nodejs/actions/workflows/code-quality-and-tests.yml
-[REF_INTERN_URL_WORKFLOW_CODEQL]: https://github.com/DJBlackEagle/code-style-nodejs/actions/workflows/codeql.yml
+[REF_INTERN_URL_GIT]: https://github.com/DJBlackEagle/testing-publish
+[REF_INTERN_URL_ISSUE_LIST]: https://github.com/DJBlackEagle/testing-publish/issues
+[REF_INTERN_URL_ISSUE_NEW]: https://github.com/DJBlackEagle/testing-publish/issues/new/choose
+[REF_INTERN_URL_MD_CHANGELOG]: https://github.com/DJBlackEagle/testing-publish/blob/main/CHANGELOG.md
+[REF_INTERN_URL_MD_CODE_OF_CONDUCT]: https://github.com/DJBlackEagle/testing-publish/blob/main/CODE_OF_CONDUCT.md
+[REF_INTERN_URL_MD_CONTRIBUTING]: https://github.com/DJBlackEagle/testing-publish/blob/main/CONTRIBUTING.md
+[REF_INTERN_URL_MD_DEVELOPMENT]: https://github.com/DJBlackEagle/testing-publish/blob/main/DEVELOPMENT.md
+[REF_INTERN_URL_MD_LICENSE]: https://github.com/DJBlackEagle/testing-publish/blob/main/LICENSE.md
+[REF_INTERN_URL_MD_README]: https://github.com/DJBlackEagle/testing-publish/blob/main/README.md
+[REF_INTERN_URL_MD_SECURITY]: https://github.com/DJBlackEagle/testing-publish/blob/main/SECURITY.md
+[REF_INTERN_URL_NPMJS_PACKAGE]: https://www.npmjs.com/package/@djblackeagle/testing-publish
+[REF_INTERN_URL_PULLREQUEST]: https://github.com/DJBlackEagle/testing-publish/pulls
+[REF_INTERN_URL_VULNERABILITY]: https://github.com/DJBlackEagle/testing-publish/security
+[REF_INTERN_URL_VULNERABILITY_NEW]: https://github.com/DJBlackEagle/testing-publish/security/advisories/new
+[REF_INTERN_URL_WORKFLOW_CQAT]: https://github.com/DJBlackEagle/testing-publish/actions/workflows/code-quality-and-tests.yml
+[REF_INTERN_URL_WORKFLOW_CODEQL]: https://github.com/DJBlackEagle/testing-publish/actions/workflows/codeql.yml
 [REF_EXTERN_NODEJS]: https://nodejs.org
 [REF_EXTERN_NPM]: https://www.npmjs.com
 [REF_EXTERN_PNPM]: https://pnpm.io
