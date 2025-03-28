@@ -1,6 +1,6 @@
 {
   "hooks": {
-    "before:release": "yarn run prettier:fix && yarn run lint && git add . --update",
+    "before:release": "pnpm run clean:artifacts && pnpm run prettier:fix && pnpm run lint && git add . --update",
     "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
   },
   "git": {
