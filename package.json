@@ -1,6 +1,6 @@
 {
   "name": "@djblackeagle/testing-publish",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Unified configuration for consistent code style, leveraging popular tools like ESLint, Prettier, and Commitlint to ensure code quality, readability, and standardized commit messages.",
   "homepage": "https://github.com/DJBlackEagle/testing-publish#readme",
   "bugs": {

@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.0 (2025-03-28)
+
+- fix(README.md): fix typo ([c2ab0bf](https://github.com/DJBlackEagle/testing-publish/commit/c2ab0bf))
+- fix(README.md): fix typo of feating ([be4c8fd](https://github.com/DJBlackEagle/testing-publish/commit/be4c8fd))
+- chore: remove ignoring toc generatin comment ([5121d01](https://github.com/DJBlackEagle/testing-publish/commit/5121d01))
+- chore: update relase-it config ([6f75ca9](https://github.com/DJBlackEagle/testing-publish/commit/6f75ca9))
+- feat: add new information to the README.md ([1bbf8c6](https://github.com/DJBlackEagle/testing-publish/commit/1bbf8c6))
+
 ## 1.0.0 (2025-03-28)
 
 - chore: add commitlint configuration and Husky commit message hook ([75ae80a](https://github.com/DJBlackEagle/testing-publish/commit/75ae80a)), closes [#8](https://github.com/DJBlackEagle/testing-publish/issues/8)
