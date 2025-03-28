@@ -3,7 +3,6 @@
  * @type {import('semantic-release').GlobalConfig}
  */
 export default {
-  dryRun: true,
   repositoryUrl: 'git@github.com:DJBlackEagle/testing-publish.git',
   tagFormat: '${version}',
   plugins: [
