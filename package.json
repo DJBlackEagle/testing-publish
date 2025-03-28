@@ -50,12 +50,12 @@
     "format:fix:file": "prettier --write --ignore-unknown",
     "validate": "pnpm run lint && pnpm run format && pnpm run test --onlyChanged --config=jest.config.workflow-ci.mjs",
     "prepare": "husky",
-    "rel": "dotenv -- release-it",
-    "rel:beta": "dotenv -- release-it --preRelease=beta",
-    "rel:dev": "dotenv -- release-it --preRelease=dev",
-    "rel:ci": "dotenv -- release-it --ci",
-    "rel:ci:beta": "dotenv -- release-it --preRelease=beta --ci",
-    "rel:ci:dev": "dotenv -- release-it --preRelease=dev --ci"
+    "rel": "echo \"Not implemented yet (rel)\"",
+    "rel:beta": "echo \"Not implemented yet (rel:beta)\"",
+    "rel:dev": "echo \"Not implemented yet (rel:dev)\"",
+    "rel:ci": "echo \"Not implemented yet (rel:ci)\"",
+    "rel:ci:beta": "echo \"Not implemented yet (rel:ci:beta)\"",
+    "rel:ci:dev": "echo \"Not implemented yet (rel:ci:dev)\"i"
   },
   "dependencies": {
     "@eslint/compat": "^1.2.7",
@@ -72,7 +72,6 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
-    "@release-it/conventional-changelog": "^10.0.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.14",
     "dotenv-cli": "^8.0.0",
@@ -81,7 +80,6 @@
     "jest": "^29.7.0",
     "lint-staged": "^15.5.0",
     "prettier": "^3.5.3",
-    "release-it": "^18.1.2",
     "ts-jest": "^29.3.0",
     "typescript": "^5.8.2"
   }
