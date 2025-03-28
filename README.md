@@ -1,4 +1,4 @@
-# Welcome to @djblackeagle/testing-publish <!-- omit in toc -->
+# Welcome to @djblackeagle/testing-publish
 
 This repo is only for testing.
 
