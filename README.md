@@ -2,4 +2,4 @@
 
 This repo is only for testing.
 
-feating
+featuring
