@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const config = {
   hooks: {
     'before:release':
@@ -132,4 +133,4 @@ const config = {
   },
 };
 
-export default config;
+module.exports = config;
