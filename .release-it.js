@@ -1,4 +1,6 @@
-import commitlint from './commitlint.config.mjs';
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-require-imports */
+const commitlint = require('./.commitlintrc');
 
 const config = {
   hooks: {
