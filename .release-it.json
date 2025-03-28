@@ -1,5 +1,4 @@
 {
-  "$schema": "https://unpkg.com/release-it@18/schema/release-it.json",
   "hooks": {
     "before:release": "yarn run prettier:fix && yarn run lint && git add . --update",
     "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
